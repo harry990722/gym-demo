@@ -33,6 +33,7 @@
 
         #bmiTable{
             width: 60%;
+            height: 400px;
             margin: 12px auto;
         }
 
@@ -40,12 +41,37 @@
             background-color: chartreuse;
         }
 
-        #bmiTable td{
-            background-color: cadetblue;
-            color: white;
-            text-align: center;
+        #bmiTable td:first-child{
+            background-color: rgb(89, 9, 236);
+
+        }
+        h2 {
+            display: inline-block;
+            width: 400px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid darkblue;
         }
 
+        form{
+            background-color: antiquewhite;
+            width: 500px;
+            margin: 0 auto;
+            padding: 24px 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input{
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+        }
     </style>
 
 </head>
@@ -120,6 +146,7 @@
 
     <hr>
     <h2 class="sub-title">健身影片</h2>
+    <div>
     <iframe width="45%" height="369" src="https://www.youtube.com/embed/TtbrOIUYtGw"
         title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -128,6 +155,7 @@
         title="【初階】男女適用 10分鐘無跳躍 全身燃脂運動 (適用新手、大體重)" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <video width="91%" controls src="video/file_example_MP4_640_3MG.mp4"></video>
     <hr>
     <h2 class="sub-title">表單</h2>
