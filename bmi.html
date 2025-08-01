@@ -25,10 +25,11 @@
                 margin: 0px;
             }  
         }
+        
     </style>
 
 
-
+    <script src="js/tools.js"></script>
 
 
 
@@ -53,6 +54,46 @@
             <button type="submit">計算</button>
         </p>
         <a href="index.html">回首頁</a>
+        <script>
+
+           
+
+            // 外部輸入
+            let height=Number(prompt("請輸入身高:"));
+            let weight=Number(prompt("請輸入體重:"));
+
+            let bmi=getBMI(height,weight);
+            let commment = getComment(bmi);
+            //輸出優化
+            document.write(`<h1>身高:${height}<br>體重:${weight}<br>BMI:${bmi.toFixed(2)}`)
+            document.write(`<h1 style="color:blue">${commment}</h1>`)
+            for(let i = 0;i < 5; i++) {
+            //提示第幾次輸入
+            alert(`目前第${i+1}次輸入`)
+            let x = Number(prompt("請輸入第一個數字:"));
+            let y = Number(prompt("請輸入第二個數字:"));
+            let op = prompt("請輸入(+-*/)=>(q:exit)");
+            if(op=="q") break;
+            let z;
+            if (op=="+"){
+                 z=x+y;
+            }else if (op=="-") {
+                 z = x - y;
+            }else if (op=="*"){
+                 z=x*y;
+            }else if (op=="/"){
+                 z=x/y;
+            }else {
+                alert("輸入錯誤!");
+            }
+
+            console.log(x,y,z);
+            
+            document.write(`<br><b>x=${x} y=${y} x+y=${z}</b>`);
+
+            alert(`x=${x} y=${y} x+y=${z}`);
+        }
+        </script>
     </form>
 </body>
 
